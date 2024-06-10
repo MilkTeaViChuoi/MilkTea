@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Example</title>
+    <script language="JavaScript">
+
+        function person(first_name, last_name, age, sex) {
+            this.first_name = first_name;
+            this.last_name = last_name;
+            this.age = age;
+            this.sex = sex;
+            this.printStats = printStats;
+        }
+
+
+        function printStats() {
+            with (document) {
+                write("Name: " + this.last_name + " " + this.first_name + "<br>");
+                write("Age: " + this.age + "<br>");
+                write("Sex: " + this.sex + "<br><br>");
+            }
+        }
+
+        var person1 = new person("Thuy", "Dau Bich", 23, "Female");
+        var person2 = new person("Chung", "Nguyen Bao", 24, "Male");
+        var person3 = new person("Binh", "Nguyen Nhat", 24, "Male");
+        var person4 = new person("Hoan", "Do Van", 23, "Male");
+
+
+        person1.printStats();
+        person2.printStats();
+        person3.printStats();
+        person4.printStats();
+    </script>
+</head>
+<body>
+</body>
+</html>
