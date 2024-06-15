@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Thăm Dò Ý Kiến</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .survey-form {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .survey-form h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .form-group textarea {
+            height: 80px;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions input[type="submit"],
+        .form-actions input[type="reset"] {
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="survey-form">
+        <h2>PHIẾU THĂM DÒ Ý KIẾN</h2>
+        <!-- Bắt đầu form -->
+        <form>
+            <!-- Nhóm form cho tên đăng nhập -->
+            <div class="form-group">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <!-- Nhóm form cho mật khẩu -->
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <!-- Nhóm form cho sở thích -->
+            <div class="form-group">
+                <label>Sở thích của bạn:</label>
+                <select multiple>
+                    <option>Truy cập Internet</option>
+                    <option>Đọc sách báo</option>
+                    <option>Xem Tivi</option>
+                    <option>Tham quan du lịch</option>
+                </select>
+            </div>
+            <!-- Nhóm form cho giới tính -->
+            <div class="form-group">
+                <label>Giới tính:</label>
+                <input type="radio" id="male" name="gender" value="Nam">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender" value="Nữ">
+                <label for="female">Nữ</label>
+            </div>
+
+            <div class="form-group">
+                <label>Những mục bạn thường quan tâm trên Internet:</label>
+                <input type="checkbox" id="news" name="interest" value="Tin tức">
+                <label for="news">Tin tức</label><br>
+                <input type="checkbox" id="entertainment" name="interest" value="Giải trí">
+                <label for="entertainment">Giải trí</label><br>
+                <input type="checkbox" id="study" name="interest" value="Góc học tập">
+                <label for="study">Góc học tập</label><br>
+                <input type="checkbox" id="other" name="interest" value="Các mục khác">
+                <label for="other">Các mục khác</label>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Nội dung góp ý để website tốt hơn:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+            </div>
+          
+            <div class="form-actions">
+                <input type="submit" value="Gửi đi">
+                <input type="reset" value="Phục Hồi">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="../css/dangkdl.css">
+    <script src="../scripts/DKDL.js" defer></script>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1>Đăng ký du lịch</h1>
+
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Điện thoại</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="is-vietnamese">Khách Việt Nam</label>
+                <input type="checkbox" id="is-vietnamese" name="is-vietnamese">
+            </div>
+
+            <div class="form-group">
+                <label for="tour-type">Chọn tour</label>
+                <select id="tour-type" name="tour-type">
+                    <option>Buôn mê thuột - Gia lai - Kontum</option>
+                    <option>Hà Nội</option>
+                    <option>Hồ Chí Minh</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="transportation">Phương tiện</label>
+                <div class="inline">
+                    <input type="radio" id="plane" name="transportation" value="Máy bay">
+                    <label for="plane">Máy bay</label>
+                </div>
+                <div class="inline">
+                    <input type="radio" id="car" name="transportation" value="Xe ô tô">
+                    <label for="car">Xe ô tô</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Số lượng đoàn khách</label>
+                <div class="guest-count">
+                    <label for="adults">Người lớn</label>
+                    <input type="number" id="adults" name="adults">
+                </div>
+                <div class="guest-count">
+                    <label for="children">Trẻ em</label>
+                    <input type="number" id="children" name="children">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-notes">Ghi chú thêm</label>
+                <textarea id="additional-notes" name="additional-notes"></textarea>
+            </div>
+
+            <div class="btn">
+                <input type="button" id="submit-dongy"  value="Đồng ý">
+            </div>
+
+            <div class="success-message" id="success-message" style="display: none;">
+                Bạn đã đăng ký thành công!
+            </div>
+        </div>
+    </form>
+</body>
+</html>
